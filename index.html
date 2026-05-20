@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gonçalo Paiva</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Gonçalo Paiva</div>
+        </header>
+
+        <section id="galeria">
+            <div class="gallery">
+                <!-- gallery:start -->
+                <article class="photo-card" tabindex="0" data-src="images/1.jpeg" data-title="1" data-date="2026.05.20 13:29:23" data-camera="FUJIFILM X-T20" data-lens="XC15-45mmF3.5-5.6 OIS PZ" data-aperture="f/5.6" data-shutter="1/2500s" data-iso="1600">
+                    <img src="images/1.jpeg" alt="1" loading="lazy" />
+                    <div class="photo-meta">
+                        <h3>1</h3>
+                        <p>Imagem 1 da galeria.</p>
+                    </div>
+                </article>
+                <article class="photo-card" tabindex="0" data-src="images/2.jpeg" data-title="2" data-date="2026.05.20 13:28:47" data-camera="FUJIFILM X-T20" data-lens="XC15-45mmF3.5-5.6 OIS PZ" data-aperture="f/5.2" data-shutter="1/4700s" data-iso="1250">
+                    <img src="images/2.jpeg" alt="2" loading="lazy" />
+                    <div class="photo-meta">
+                        <h3>2</h3>
+                        <p>Imagem 2 da galeria.</p>
+                    </div>
+                </article>
+                <article class="photo-card" tabindex="0" data-src="images/3.jpeg" data-title="3" data-date="2026.05.20 13:30:27" data-camera="FUJIFILM X-T20" data-lens="XC15-45mmF3.5-5.6 OIS PZ" data-aperture="f/5.6" data-shutter="1/340s" data-iso="1600">
+                    <img src="images/3.jpeg" alt="3" loading="lazy" />
+                    <div class="photo-meta">
+                        <h3>3</h3>
+                        <p>Imagem 3 da galeria.</p>
+                    </div>
+                </article>
+                <!-- gallery:end -->
+            </div>
+        </section>
+    </div>
+
+    <div class="modal" id="photoModal" aria-hidden="true">
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Detalhes da imagem">
+            <button class="close-btn" id="modalClose" aria-label="Fechar">×</button>
+            <button class="nav-btn nav-prev" id="navPrev" aria-label="Foto anterior">‹</button>
+            <img class="modal-image" id="modalImage" src="" alt="Foto ampliada" />
+            <button class="nav-btn nav-next" id="navNext" aria-label="Próxima foto">›</button>
+            <div class="modal-caption">
+                <div class="caption-block caption-left">
+                    <strong id="modalCamera"></strong>
+                    <span id="modalDate"></span>
+                </div>
+                <div class="caption-block caption-right">
+                    <strong id="modalExposure"></strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
